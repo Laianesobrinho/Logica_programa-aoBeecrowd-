@@ -1,0 +1,12 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+
+let numeroFunc = parseInt(lines.shift());
+let horas = parseInt(lines.shift());
+let valorPorHora = parseFloat(lines.shift());
+
+let salary = horas * valorPorHora;
+
+console.log(`NUMBER = ${numeroFunc}`);
+console.log(`SALARY = U$ ${salary.toFixed(2)}`);
