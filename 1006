@@ -1,0 +1,14 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+let A = parseFloat (lines.shift());
+let B = parseFloat (lines.shift());
+let C = parseFloat (lines.shift());
+
+var mediaA = A * 2;
+var mediaB = B * 3;
+var mediaC = C * 5;
+
+var mediaFinal = (mediaA + mediaB + mediaC) /10;
+
+console.log("MEDIA =", mediaFinal.toFixed(1));
